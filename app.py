@@ -10,6 +10,7 @@ import json
 import numpy as np
 from scipy.stats import pearsonr
 from flask_cors import CORS
+import shutil
 
 def download(ticker):
     dl = Downloader("MyCompanyName", "my.email@domain.com")
@@ -188,7 +189,6 @@ def get_yearly_stock_performance(ticker, year):
 def process_files(root_dir, ticker):
     results_dict = {}
 
-    # Traverse through each company's ticker folder and its respective yearly filings
     ticker_path = os.path.join(root_dir, ticker, '10-K')
     if os.path.isdir(ticker_path):
         for year_folder in os.listdir(ticker_path):
@@ -215,6 +215,14 @@ def process_files(root_dir, ticker):
                         truncated_mdna_section = truncate_string_to_max_tokens(mdna_section, "gpt-3.5-turbo")
                         results_dict = analyze_mdna_and_stock(fiscal_year, percent_change_stock,
                                                               truncated_mdna_section, results_dict)
+
+        # After processing, delete the entire ticker_path folder
+        try:
+            path = os.path.join(root_dir, ticker)
+            shutil.rmtree(path)
+            print(f"Deleted folder: {path}")
+        except Exception as e:
+            print(f"Error deleting folder {path}: {e}")
     else:
         download(ticker)
         results_dict = process_files(root_dir, ticker)
