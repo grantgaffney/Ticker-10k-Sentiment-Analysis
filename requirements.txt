@@ -1,0 +1,10 @@
+flask~=3.0.3
+plotly~=5.22.0
+yfinance~=0.2.38
+bs4~=0.0.2
+lxml
+tiktoken~=0.6.0
+beautifulsoup4~=4.12.3
+openai~=1.25.1
+numpy~=1.26.4
+scipy~=1.13.0
