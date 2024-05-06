@@ -1,5 +1,7 @@
 Hello, my name is Grant and this is my project application for the vRA position at the Financial Services Innovation Lab! I hope you enjoy :)
 
+TO DEMO VIEW THE DEPLOYMENT LINK ON THE TOP RIGHT OF THE REPO or at https://ticker-10k-sentiment-analysis.vercel.app
+
 File Overview:
 
   data/ - This folder houses cached information about previous API calls to prevent multiple API calls for the same ticker. It also reduces runtime.
@@ -32,7 +34,7 @@ Project Workflow Overview:
   
 Tech-Stack Justification:
 
-  The tech stack powering this project is a combination of Python for the backend scripting, beautifulsoup for parsing, OpenAI for LLM API, and a React front-end.
+  The tech stack powering this project is a combination of Python for the backend scripting, beautifulsoup for parsing, OpenAI for LLM API, a React front-end and Vercel for hosting.
 
   I chose to use python because of the easy libraries and the nature of the project is scripting. It seemed like the natural and easy choice. I choose to use OpenAI 
   for the LLM API because of the strength of their model with textual analysis and ease of use (i also had free credits :) ). Then I used React for the front-end
