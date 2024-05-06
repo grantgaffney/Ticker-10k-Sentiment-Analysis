@@ -1,6 +1,13 @@
 Hello, my name is Grant and this is my project application for the vRA position at the Financial Services Innovation Lab! I hope you enjoy :)
 
-TO DEMO VIEW THE DEPLOYMENT LINK ON THE TOP RIGHT OF THE REPO or at https://ticker-10k-sentiment-analysis.vercel.app
+
+DISCLAIMER:
+
+ TLDR; I ran out of credits and the demo will only work with [APPL, PLTR, V, TSLA, GOOG, UBER, MSFT, AMZN]. To view the demo working with processing a new ticker watch this video I 
+ made ... https://www.youtube.com/watch?v=gU2b7kgcwLw
+
+ 
+  To demo the repo with the cached data ... https://ticker-10k-sentiment-analysis.vercel.app
 
 File Overview:
 
