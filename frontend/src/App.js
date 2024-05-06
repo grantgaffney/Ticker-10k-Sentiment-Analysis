@@ -43,7 +43,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-200">
       {/* Stock Scroller */}
       <div className="w-full bg-blue-500 text-white p-2 shadow-md">
         <marquee behavior="scroll" direction="left">
@@ -123,7 +123,7 @@ const App = () => {
               style={{ width: "100%", height: "100%" }}
             />
             <p className="text-gray-600 text-sm mb-8">
-              * By comparing the sentiment from the MD&A section from one year with the stock performance of the next year, this tool could help determine when to buy stock. The MD&A section often provides insights into internal company performance and speculation, so a high correlation could indicate that the company is candid in its MD&A, potentially aiding impact investing. 
+              * By comparing the sentiment from the MD&A section from one year with the stock performance of the next year, this tool could help determine when to buy stock. The MD&A section often provides insights into internal company performance and speculation, so a high correlation could indicate that the company is candid in its MD&A, potentially aiding impact investing.
             </p>
             <h3 className="text-lg font-bold mb-4 text-center mt-8">Analysis</h3>
             <div className="bg-gray-100 p-4 rounded-md mb-8">
