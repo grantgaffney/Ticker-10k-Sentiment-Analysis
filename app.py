@@ -13,12 +13,12 @@ from flask_cors import CORS
 import shutil
 
 def download(ticker):
-    dl = Downloader("MyCompanyName", "my.email@domain.com")
+    dl = Downloader("Company", "email@domain.com")
 
     dl.get("10-K", ticker, after="1995-01-01", before="2023-12-31", download_details=True)
 
 
-client = OpenAI(api_key='sk-proj-cMEbyDApRnoiEvDBG1eyT3BlbkFJxWJZZ5owSXNKaMMfoq7b')
+client = OpenAI(api_key='API_KEY') #Put your key here
 
 
 def extract_text_from_html(file_path):
